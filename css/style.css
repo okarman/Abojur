@@ -9,9 +9,155 @@ html {
 }
 
 body{
-    background-color: #F8F6F5;
     margin: 0;
-  }
+    padding: 0;
+    min-width: 1366px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    
+    color: #695A59;
+    background: rgba(238, 233, 230, 1);
+}
+
+.page-header {
+    background-color: #F8F6F5;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #695A59;
+}
+
+.header-link-call {
+    text-decoration: underline;
+}
+
+.page-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    text-decoration: underline;
+    color: #9A8584;
+}
+
+.catalog-link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-transform: uppercase;
+    color: #9A8584;
+}
+
+.solution-link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-transform: uppercase;
+    color: #F5F2ED;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 32px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #A78587;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    border-top: 1px solid #A78587;
+    border-bottom: 1px solid #A78587;
+}
+
+.page-content h1 {
+    margin: 0;
+    font-family: "Old Standard TT", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 64px;
+
+    text-transform: uppercase;
+    color: #EEE9E6;
+}
+
+
+
+.page-content h2 {
+    margin: 0;
+    position: relative;
+    font-family: "Old Standard TT", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 54px;
+
+    text-transform: uppercase;
+    color: #695A59;
+}
+
+.page-content h2::before {
+    content: "0";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 110px;
+
+    z-index: -1;
+    text-transform: uppercase;
+    color: #EAE1DC;
+}
+
+.about h2::before {
+    content: "About us";
+}
+
+.catalog h2::before {
+    content: "The best";
+}
+
+.solutions h2::before {
+    content: "Projects";
+}
+
+.page-content h3 {
+    margin: 0;
+    font-family: "Old Standard TT", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+
+    color: #695A59;
+}
+
+.page-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+}
+
+
+/****************/
+
   .menu-container{
     position: relative;
     max-width: 300px;
