@@ -8,45 +8,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Old+Standard+TT&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Студия дизайнерского текстиля в Санкт Петербурге Abojur</title>
+    <title>Abojur. Студия дизайнерского текстиля в Санкт Петербурге</title>
 </head>
 <body class="page">
-    <header class="page-header">
-        <div class="container header-grid">
-                <div class="logo-container">
-                    <a href="#">
-                        <img src="img/logo.svg" width="375" height="52" alt="Логотип компании Abojur">
-                    </a>
-                </div>
-                <div class="phone-container">
-                    <a href="tel:+9818574624" class="header-link header-link-number">
-                        +7 (981) 857-46-24
-                    </a>
-                    <a href="#" class="header-link header-link-call">
-                        заказать звонок
-                    </a>    
-                </div>
-                <div class="address-container">
-                    <p class="address">Санкт Петербург, набережная реки Карповки, дом 5, литер П</p>
-                </div>
-                <div class="menu-container">
-                    <div class="butter" id="menuButter">
-                    <span class="butter__line"></span>
-                    <span class="butter__line"></span>
-                    <span class="butter__line"></span>
-                    </div>
-                    <nav class="menu">
-                    <a href="" class="menu__item">Link</a>
-                    <a href="" class="menu__item">Link</a>
-                    <a href="" class="menu__item">Link</a>
-                    </nav>
-                </div>
+    <header class="page-header container">
+        <a href="#" class="logo">
+            <img src="img/logo.svg" width="375" height="52" alt="Логотип компании Abojur">
+        </a>
+        <a href="tel:+9818574624" class="header-link header-link-number">
+            +7 (981) 857-46-24 <span>заказать звонок</span>
+        </a>
+        <address class="address">Санкт Петербург, набережная реки Карповки, дом 5, литер П</address>
+        <div class="menu-container">
+            <div class="butter" id="menuButter">
+            <span class="butter__line"></span>
+            <span class="butter__line"></span>
+            <span class="butter__line"></span>
+            </div>
+            <nav class="menu">
+            <a href="" class="menu__item">Link</a>
+            <a href="" class="menu__item">Link</a>
+            <a href="" class="menu__item">Link</a>
+            </nav>
         </div>
     </header>
     <main class="page-content">
-        <section class="promo">
+        <h1 class="visually-hidden">Главная страница студии дизайнерского текстиля в Санкт Петербурге</h1>
+        <div class="promo">
             <div class="container promo-grid">
-                <h1 class="page-title">Создадим эмоцию вашего интерьера</h1>
+                <p class="promo-lead">Создадим эмоцию вашего интерьера</p>
                 <p class="promo-text">Интерьерный текстиль по индивидуальным размерам с доставкой на дом</p>
                 <div class="promo-button">
                     <a href="#" class="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
@@ -55,7 +45,7 @@
                     <img src="img/image-01.jpg" width="573" height="520" alt="Дизайн компании Abojur">
                 </div>
             </div>
-        </section>
+        </div>
         <section class="about">
             <div class="container about-grid">
                 <h2 class="about-title">О компании</h2>
@@ -109,7 +99,7 @@
                         Подушки <a href="#" class="page-link">Elixir №3</a> и <a href="#" class="page-link">Elixir №21</a> из зимней коллекции 2020 года
                     </p>
                 </div>
-                <div class="about-rightside-text-3">
+                <div class="about-text-3">
                     <p>
                         Мы не хотим просто делать текстиль. Мы хотим его создать. 
                         Мы хотим, чтобы он  был  исключительным  и отличался, сохраняя 
@@ -119,13 +109,13 @@
             </div>
         </section>
         <section class="catalog">
-            <div class="container catalog-grid">
-            <h2>ДЛЯ ВАС ТОЛЬКО САМОЕ ЛУЧШЕЕ</h2>
-            <div class="catalog-content">
+            <h2 class="catalog-title">ДЛЯ ВАС ТОЛЬКО САМОЕ ЛУЧШЕЕ</h2>
+            <div class="catalog-content container catalog-grid">
                 <div class="card-item">
                     <img src="img/image-41.jpg" width="375" height="240" alt="Подушки Casa Nova">
                     <h3>Подушки Casa Nova</h3>
-                    <p>*стоимость варьируется в зависимости от размера изделия</p>
+                    <p class="card-price">от 15 000 ₽</p>
+                    <p class="card-text">*стоимость варьируется в зависимости от размера изделия</p>
                     <div>
                         <a href="#" class="catalog-link">
                             Заказать
@@ -135,7 +125,8 @@
                 <div class="card-item">
                     <img src="img/image-43.jpg" width="375" height="240" alt="Подушки ШАНТИ">
                     <h3>Подушки ШАНТИ</h3>
-                    <p>*стоимость варьируется в зависимости от размера изделия</p>
+                    <p class="card-price">от 13 660 ₽</p>
+                    <p class="card-text">*стоимость варьируется в зависимости от размера изделия</p>
                     <div>
                         <a href="#" class="catalog-link">
                             Заказать
@@ -145,7 +136,8 @@
                 <div class="card-item">
                     <img src="img/image-03.jpg" width="375" height="240" alt="Подушки Elixir №7">
                     <h3>Подушки Elixir №7</h3>
-                    <p>*стоимость варьируется в зависимости от размера изделия</p>
+                    <p class="card-price">от 15 000 ₽</p>
+                    <p class="card-text">*стоимость варьируется в зависимости от размера изделия</p>
                     <div>
                         <a href="#" class="catalog-link">
                             Заказать
@@ -155,7 +147,8 @@
                 <div class="card-item card-horizontal">
                     <img src="img/image-10.jpg" width="178" height="264" alt="Подушки Basic">
                     <h3>Подушки Basic</h3>
-                    <p>*стоимость варьируется в зависимости от размера изделия</p>
+                    <p class="card-price">от 11 000 ₽</p>
+                    <p class="card-text">*стоимость варьируется в зависимости от размера изделия</p>
                     <div>
                         <a href="#" class="catalog-link">
                             Заказать
@@ -165,7 +158,8 @@
                 <div class="card-item card-horizontal">
                     <img src="img/image-53.jpg" width="178" height="264" alt="Подушки Vintage">
                     <h3>Подушки Vintage</h3>
-                    <p>*стоимость варьируется в зависимости от размера изделия</p>
+                    <p class="card-price">от 17 000 ₽</p>
+                    <p class="card-text">*стоимость варьируется в зависимости от размера изделия</p>
                     <div>
                         <a href="#" class="catalog-link">
                             Заказать
@@ -173,7 +167,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </section>
         <section class="solutions">
             <div class="container solutuions-grid">
