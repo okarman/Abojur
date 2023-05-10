@@ -97,10 +97,7 @@ a {
 
 .page-content h2 {
   margin: 0;
-  padding-left: 97px;
-  padding-top: 20px;
   padding-bottom: 16px;
-  position: relative;
   font-family: "Old Standard TT", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -111,11 +108,7 @@ a {
   color: #695a59;
 }
 
-.page-content h2::before {
-  content: "0";
-  position: absolute;
-  left: 0;
-  top: 0;
+.about .title-bg {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 140px;
@@ -124,34 +117,7 @@ a {
   z-index: -1;
   text-transform: uppercase;
   color: #eae1dc;
-}
-
-.about h2::before {
-  content: "About us";
-}
-
-.catalog h2::before {
-  content: "The best";
-}
-
-.solutions h2::before {
-  content: "Projects";
-}
-
-.mission h2::before {
-  content: "Mission";
-}
-
-.team h2::before {
-  content: "Our team";
-}
-
-.gallery h2::before {
-  content: "Collections";
-}
-
-.feedback h2::before {
-  content: "Talk";
+  grid-area: 1 / 1 / 2 / -1;
 }
 
 .page-content h3 {
@@ -275,8 +241,8 @@ a {
 }
 
 .about {
-  margin-top: 85px;
-
+  padding-top: 65px;
+  padding-bottom: 95px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
@@ -287,8 +253,28 @@ a {
   grid-column: 2 / span 6;
 }
 
-.about-title {
+.section-header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  font-family: "Old Standard TT", sans-serif;
   grid-area: 1 / 1 / 2 / -1;
+}
+
+.section-header h2 {
+  grid-area: 1 / 2 / 2 / span 5;
+  margin: auto 0;
+  z-index: 1;
+}
+
+
+.section-header p {
+  grid-area: 1 / 1 / 2 / -1;
+    margin: 15px 0 0 0;
+    font-size: 140px;
+    line-height: 140px;
+    text-transform: uppercase;
+    color: #eae1dc;
 }
 
 .about-aside {
@@ -340,7 +326,7 @@ a {
     grid-area: row-start / col-start / row-end / col-end;
     */
 .catalog {
-  margin-top: 120px;
+  padding-bottom: 120px;
 }
 
 .catalog-content {
@@ -385,7 +371,7 @@ a {
 }
 
 .solutions {
-  margin-top: 120px;
+  padding-bottom: 120px;
 }
 
 .gallery {
@@ -414,5 +400,74 @@ a {
 }
 
 .mission {
-  margin-top: 120px;
+  background-color: #343235;
+  background-image: url(../img/bg-mission.jpg);
+  background-repeat: repeat-x;
+  background-position: center bottom 20px;
+}
+
+.mission-content {
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 20px;
+}
+
+.mission video {
+  grid-area: 1 / 1 / 4 / 7;
+}
+
+.mission-content .section-header {
+  grid-template-columns: repeat(6, 1fr);
+  grid-area: 1 / 7 / 2 / span 6;
+}
+
+.mission-text {
+  grid-area: 2 / 8 / 3 / span 5;
+  color: #FBF3F0;
+}
+
+.mission-img-small {
+  grid-area: 4 / 4 / 5 / span 3;
+}
+
+.mission-img-big {
+  grid-area: 3 / 7 / 5 / span 6;
+}
+
+.section-header-light h2 {
+  color: #eee9e6;
+}
+
+.section-header-light p {
+  color: rgb(62, 58, 60);
+}
+
+.team {
+  background-color: #343235;
+  padding-top: 120px;
+}
+
+.team-content {
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  color: #FBF3F0;
+}
+
+.team-paragraph-small{
+  font-size: 14px;
+  line-height: 24px;
+  grid-column: 9 / -1;
+  grid-row: 1 / 2;
+}
+
+.team-paragraph {
+  grid-column: 2 / 8;
+}
+
+.team-content img {
+  grid-column: 1 / -1;
 }
