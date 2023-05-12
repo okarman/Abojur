@@ -100,13 +100,10 @@ a {
 
 .page-content h2 {
   margin: 0;
-  padding-bottom: 16px;
   font-family: "Old Standard TT", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 42px;
   line-height: 54px;
-
   text-transform: uppercase;
   color: #695a59;
 }
@@ -525,14 +522,16 @@ a {
   grid-column: 1 / 7;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 60px;
-    margin-bottom: 10px;
 }
 
- 
 .feedback-text {
   grid-column: 2 / span 5;
   margin: 0 0 30px 0;
-    color: #eee9e6;
+  font-size: 18px;
+  line-height: 32px;
+  opacity: 0.6;
+
+  color: #eee9e6;
 }
 
 .feedback-form {
@@ -565,18 +564,14 @@ a {
   grid-column: 2 / span 5;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: "name name name name name"
-  "phone phone phone phone phone"
-  "period period . agreement agreement"
-  "button button button button button";
+  grid-template-areas:
+    "name name name name name"
+    "phone phone phone phone phone"
+    "period period . agreement agreement"
+    "submit submit submit submit submit";
   grid-gap: 25px 20px;
   margin-bottom: 70px;
-} 
-
-/* font-size: 14px;
-line-height: 18px;
-
-color: #F6EDE9; */
+}
 
 .map {
   grid-area: 1 / 8 / 4 / -1;
@@ -584,8 +579,30 @@ color: #F6EDE9; */
 
 .field {
   width: 100%;
+  font-family: inherit;
+    font-weight: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 13px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #A78587;
+  color: #f6ede9;
+}
+
+.period select {
+  padding: 14px 14px 14px 20px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #A78587;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.agreement label {
   font-size: 14px;
   line-height: 18px;
 
-  color: #F6EDE9;
+  color: #ffffff;
 }
