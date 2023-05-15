@@ -196,8 +196,23 @@ a {
   background-position: center;
 }
 
+.butter-button {
+  margin: 0;
+  padding: 0;
+  width: 36px;
+  height: 32px;
+  border: none;
+  background-image: url(../img/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
 .menu-container {
   grid-column: 12 / 13;
+  position: relative;
+  text-align: end;
+  padding-top: 10px;
 }
 
 .promo {
@@ -268,7 +283,7 @@ a {
 
 .section-header p {
   grid-area: 1 / 1 / 2 / -1;
-  margin: 15px 0 0 0;
+  margin: 22px 0 0 0;
   font-size: 140px;
   line-height: 140px;
   text-transform: uppercase;
@@ -487,6 +502,7 @@ a {
 
 .collections-list {
   grid-column: 1 / -1;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -515,13 +531,14 @@ a {
 .feedback-content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
+  grid-column-gap: 20px;
 }
 
 .feedback .section-header {
   grid-column: 1 / 7;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 60px;
+  margin-bottom: 10px;
 }
 
 .feedback-text {
@@ -529,7 +546,6 @@ a {
   margin: 0 0 30px 0;
   font-size: 18px;
   line-height: 32px;
-  opacity: 0.6;
 
   color: #eee9e6;
 }
@@ -558,6 +574,7 @@ a {
 
 .feedback-form .submit {
   grid-area: submit;
+  margin-top: 34px;
 }
 
 .feedback-form {
@@ -580,13 +597,17 @@ a {
 .field {
   width: 100%;
   font-family: inherit;
-    font-weight: inherit;
+  font-weight: inherit;
   font-size: 14px;
   line-height: 18px;
   padding: 13px 0;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #A78587;
+  border-bottom: 1px solid #a78587;
+  color: #ffffff;
+}
+
+.field::placeholder {
   color: #f6ede9;
 }
 
@@ -595,12 +616,37 @@ a {
   font-family: inherit;
   font-size: 14px;
   line-height: 18px;
-  border: 1px solid #A78587;
+  border: 1px solid #a78587;
   background-color: transparent;
   color: #ffffff;
 }
 
+.agreement label::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -43px;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #a78587;
+}
+
+.agreement input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -36px;
+  width: 24px;
+  height: 18px;
+  background-image: url(../img/checked.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .agreement label {
+  display: inline-block;
+  position: relative;
   font-size: 14px;
   line-height: 18px;
 

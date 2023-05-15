@@ -32,16 +32,7 @@
         Санкт Петербург, набережная реки Карповки, дом 5, литер П
       </address>
       <div class="menu-container">
-        <div class="butter" id="menuButter">
-          <span class="butter__line"></span>
-          <span class="butter__line"></span>
-          <span class="butter__line"></span>
-        </div>
-        <nav class="menu">
-          <a href="" class="menu__item">Link</a>
-          <a href="" class="menu__item">Link</a>
-          <a href="" class="menu__item">Link</a>
-        </nav>
+        <button class="butter-button"></button>
       </div>
     </header>
     <main class="page-content">
@@ -173,7 +164,7 @@
               />
             </div>
             <div class="card-content">
-              <h3>Подушки ШАНТИ</h3>
+              <h3>Покрывало ШАНТИ</h3>
               <p class="card-price">от 13 660 ₽</p>
               <p class="card-text">
                 *стоимость варьируется в зависимости от размера изделия
@@ -469,7 +460,7 @@
       <section class="feedback">
         <div class="feedback-content container">
           <header class="section-header section-header-light">
-            <h2>мы всегда рады общению</h2>
+            <h2>Мы всегда рады общению</h2>
             <p>Talk</p>
           </header>
           <p class="feedback-text">
@@ -479,11 +470,26 @@
           <form class="feedback-form" action="#" method="post">
             <div class="name">
               <label for="name" class="visually-hidden">Ваше имя</label>
-              <input class="field" type="text" name="name" id="name" placeholder="Ваше имя"/>
+              <input
+                class="field"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ваше имя"
+                required=""
+              />
             </div>
             <div class="phone">
               <label for="tel" class="visually-hidden">Ваш телефон</label>
-              <input class="field" type="text" name="tel" id="tel" placeholder="Введите телефон"/>
+              <input
+                class="field"
+                type="text"
+                name="tel"
+                id="tel"
+                pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Введите телефон"
+                required=""
+              />
             </div>
             <div class="period">
               <label for="period" class="visually-hidden">Выберете время</label>
@@ -498,8 +504,8 @@
               <input
                 class="visually-hidden"
                 type="checkbox"
-                name="agreement"
-                id="agreement"
+                name="agreements"
+                id="agreements"
               />
               <label for="agreements" class="text-label"
                 >Согласие на обработку персональных данных</label
