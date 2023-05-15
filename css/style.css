@@ -436,6 +436,10 @@ a {
   grid-area: 1 / 7 / 2 / span 6;
 }
 
+.mission-text p {
+  margin-top: 0;
+}
+
 .mission-text {
   grid-area: 2 / 8 / 3 / span 5;
   color: #fbf3f0;
